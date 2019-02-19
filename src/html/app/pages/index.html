@@ -1,0 +1,40 @@
+<!--Load Main HTML Layout-->
+{% extends "src/html/app/base.html" %}
+
+<!--Define Site Name-->
+{% set siteName = 'Dev Env' %}
+<!-- (should stay the same on all pages) -->
+
+<!--Define Main Schema-->
+{% set schemaType = 'Article' %}
+
+<!--Define OGP type-->
+{% set opgType = 'article' %}
+
+<!--Define Twitter type and handles-->
+{% set twitterCardType = 'product' %}
+{% set twitterNameAuthor = '@author_handle' %}
+{% set twitterSite = '@site_handle' %}
+
+<!--Define Page Details-->
+{% set pageTitle = 'Dev Env' %}
+{% set pageTitleName = 'Dev Env' %}
+{% set pageDescription = 'Page description. No longer than 155 characters.' %}
+{% set pageUrl = 'http://www.example.com/' %}
+{% set pageImage = '../media/img/ogp.png' %}
+
+
+<!--Define body class-->
+{% set bodyClass = 'p-homepage' %}
+
+<!--Main Content-->
+{% block content %}
+
+{% include "src/html/app/components/header.html" %}
+
+<main>
+  Main
+</main>
+
+{% include "src/html/app/components/footer.html" %}
+{% endblock %}
