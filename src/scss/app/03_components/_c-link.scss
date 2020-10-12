@@ -4,16 +4,21 @@
   color: inherit;
   text-decoration: none;
 
-  &:hover {
-    @extend %decoration-underline;
-  }
-
   &-underline {
     @extend %decoration-underline;
   }
 
-  &-logo {
-    max-width: 170px;
+  &--logo {
+    width: 60px;
+    transform: translateY(30px);
   }
 
+  .o-mainNav-list__item & {
+    padding: 7px 10px;
+    color: $white;
+  }
+
+  .o-mainNav-list__item:not(:last-child) & {
+    margin-right: 10px;
+  }
 }

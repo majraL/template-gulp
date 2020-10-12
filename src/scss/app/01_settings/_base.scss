@@ -16,15 +16,7 @@ html, body {
   font-size: $body-font-size;
   line-height: $line-height-default;
   letter-spacing: $letter-spacing-default;
-  color: $color-text-neutral;
-}
-
-body.p-homepage {
-
-  @include laptop {
-    margin-bottom: 25.875rem;
-  }
-  
+  color: $white;
 }
 
 ul {
@@ -41,46 +33,4 @@ ul {
 
 a.c-btn {
   text-decoration: none;
-}
-
-hr {
-  border-color: #E3E3E3;
-  opacity: .3;
-
-  .o-mainFooter & {
-    border-color: #606060;
-    opacity: 1;
-  }
-
-  .o-stats & {
-    border-color: rgba($color-text-neutral, .25);
-    margin: 1.0625rem 0 .9375rem;
-  }
-
-}
-
-main {
-
-  @include laptop {
-    
-    .p-homepage & {
-      position: relative;
-      z-index: 1;
-      background-color: $white;
-    }
-
-  }
-
-}
-
-br.br {
-
-  @include laptopDown {
-    
-    .o-product-wrapper .c-ttl-h2 & {
-      display: none;
-    }
-
-  }
-
 }
